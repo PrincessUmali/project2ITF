@@ -1,0 +1,22 @@
+#type, #eventTitle, #dates, #posting {
+    margin-left: 5in;
+    margin-right: -150px;
+    width: 300px;
+    display: inline-block;
+}
+#register, #Email, #FamProg, #PointofContact, #HostingCommand {
+    margin-left: 5in;
+    display:inline-block;
+}
+#Submit, #Reset {
+    margin-left: 7in;
+    margin-right: -650px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#text, #text2, #text3, #text4, #text5 {
+    display:none;
+}
+#Submited {
+    margin-left: 5in;
+}

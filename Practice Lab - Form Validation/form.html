@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a New Event</title>
+    <script src = "js/form.js"></script>
+    <link rel = "stylesheet" href = "css/form.css">
+</head>
+<body>
+    <form name = "vForm" id = "vForm">
+        <label id = "type">Event Type: </label>
+        <select id = "eventType" name = "eventType" required>
+        <option value = "Choose">Choose One: </option>
+        <option value = "Conference">Conference</option>
+        <option value = "Seminars">Seminars</option>
+        <option value = "Workshop">Workshops</option>
+        <option value = "Meeting">Meetings</option>
+        <option value = "ceremony">Ceremonies</option>
+        <option value = "Birthday">Birthday</option>
+        <option value = "Debut">Debut</option>
+        <option value = "Wedding">Wedding</option>
+        <option value = "Contest">Contest</option>
+        <option value = "Party">Party</option>
+        <option value = "Family">Family Reunions</option>
+        </select> <br><br>
+        <label id = "eventTitle">Event Title: </label>
+        <input type = "text" name = "title" id = "title" required><br><br>
+
+        <label id = "dates">Event Dates: </label>
+        <input type = "date" name = "start"  id = "start" required> to
+        <input type = "date" name = "finish" id = "finish" required> <br><br> 
+
+        <label id = "posting">Posting Date: </label>
+        <input type = "date" id = "postingDate" name = "post" required> <br><br>
+
+        <input name = "register" type = "checkbox" id = "register" onclick = "check()">
+        <label>Is Registration Required?</label>
+        <label id = "text"><b>Yes</b></label><br><br>
+
+        <input name = "FamProg" type = "checkbox" id = "FamProg" onclick = "check()">
+        <label>Is this event associated with any Family Programs?</label>
+        <label id = "text2"><b>Yes, just choose the event type: Family Reunion.</b></label><br><br>
+
+        <input name = "Email" type = "checkbox" id = "Email" onclick = "check()">
+        <label>Upon Registration Completion. Are Users to Receive an Auto Generated Email?</label> 
+        <label id = "text3"><b>Yes</b></label><br><br>
+
+        <input name = "PointofContact" type = "checkbox" id = "PointofContact" onclick = "check()">
+        <label>Is There a Point of Contact?</label>
+        <label id = "text4"><b>Yes, just contact this number: 09773705538 for more information on the said event.</b></label><br><br>
+
+        <input name = "HostingCommand" type = "checkbox" id = "HostingCommand" onclick = "check()">
+        <label>Is There a Hosting Command Point of Contact?</label>
+        <label id = "text5"><b>Yes</b></label><br><br>
+
+        <input type = "button" name = "Submit" id = "Submit" value = "Save" onclick = "validForm()">
+        <input type = "reset" name = "Reset" id = "Reset" value = "Cancel"><br><br>
+        <label id = "Submited"></label> 
+    </form>
+</body>
+</html>
