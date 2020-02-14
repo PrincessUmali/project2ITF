@@ -23,7 +23,6 @@ function check() {
     }
     if (check3.checked) {
         text3.style.display = "inline-block";
-        
     }
     else {
         text3.style.display = "none";
@@ -85,6 +84,7 @@ function validForm() {
     } 
     else {
         document.getElementById("Submited").innerHTML = "Your Event has been saved.";
+        alert ("The Event has been saved!");
     }
     check();
 }
